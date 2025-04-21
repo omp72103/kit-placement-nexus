@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,6 +53,12 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				kit: {
+					primary: '#0047AB', // Rich blue for KIT's branding
+					secondary: '#003366', // Darker blue for contrast
+					accent: '#4B9CD3', // Lighter blue for highlights
+					light: '#E6F3FF', // Very light blue for backgrounds
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -89,6 +96,10 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
+			},
+			fontFamily: {
+				sans: ['Inter', 'sans-serif'],
+				display: ['Poppins', 'sans-serif'],
 			}
 		}
 	},
